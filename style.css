@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+}
+
+/* Header */
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(19, 19, 19, 0.97),rgba(19, 19, 19, 0.97)),url(vehem\ game\ homescreen\ logo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navigation Bar */
+
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #006dac;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+/* Content */
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+    font-family: Josefin Sans;
+    font-weight: 5000000000;
+    font-size: 70;
+    animation: headTitle 3s 1;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 20;
+    font-family: DM Sans;
+    animation: fadeIn ease 3s
+}
+
+/* Button */
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #0077ff;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #006dac;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border-color: #006dac;
+}
+
+@keyframes headTitle {
+    0%{
+      color: black;
+      margin-bottom: -40px;
+    }
+    30%{
+      letter-spacing: 15px;
+      margin-bottom: -40px;
+    }
+    85%{
+      letter-spacing: 8px;
+      margin-bottom: -40px;
+    }
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    90% {opacity: 0;}
+    100%{opacity: 100;}
+ } 
+
+/* ABOUT US */
+.abody{
+    background-color: rgba(19, 19, 19, 0.98);
+}
+
+.abp{
+    /* font-family: Source Sans Pro; */
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+    font-family: DM Sans;
+    margin: 20px auto;
+    /* line-height: 25px; */
+    font-size: 27;
+    padding-bottom: 20px;
+}
+
+.about-us-text{
+    color: rgb(255, 255, 255);
+}
+
+.abh1{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(50%);
+    font-family: Josefin Sans;
+    font-size: 70;
+    font-weight: 5000000000;
+}
+
+.imageab{
+    padding-left: 880px;
+    padding-bottom: 300px;
+}
+
+.b2{
+    width: 200px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #64006d;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.nshediimg{
+    width: 700px;
+    height: 700px;
+    padding-left: 350px;
+}
+
+.nsop{
+    width: 400px;
+    padding-left: 230px;
+    padding-top: 100px;
+}
+
+.vgop{
+    width: 800px;
+}
+
+.ogh1{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(50%);
+    font-family: Josefin Sans;
+    font-size: 70;
+    font-weight: 5000000000;
+}
+
+.tableog{
+    color: white;
+    font-family: Josefin Sans;
+}
+
+.pogp{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+    font-family: DM Sans;
+    margin: 20px auto;
+    /* line-height: 25px; */
+    font-size: 27;
+    padding-bottom: 20px;
+}
+
+.Footer{
+    text-align: right;
+    padding-right: 60px;
+}
+
+.nshedi{
+    color: white;
+}
+
+.gmail{
+    text-align: left;
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
